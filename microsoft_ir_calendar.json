@@ -1,0 +1,34 @@
+{
+  "company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "generated_at_utc": "2026-07-15T22:03:51.823465+00:00",
+  "event_count": 2,
+  "events": [
+    {
+      "company": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "event_title": "Past Events",
+      "event_type": "Other",
+      "event_date": null,
+      "raw_date": null,
+      "event_time": null,
+      "timezone": null,
+      "source_url": "https://www.microsoft.com/en-us/investor/events/events-recent",
+      "source_page": "https://www.microsoft.com/en-us/investor/events/default",
+      "scraped_at_utc": "2026-07-15T22:03:51.815633+00:00"
+    },
+    {
+      "company": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "event_title": "Upcoming Events",
+      "event_type": "Other",
+      "event_date": null,
+      "raw_date": null,
+      "event_time": null,
+      "timezone": null,
+      "source_url": "https://www.microsoft.com/en-us/investor/events/events-upcoming",
+      "source_page": "https://www.microsoft.com/en-us/investor/events/default",
+      "scraped_at_utc": "2026-07-15T22:03:51.822354+00:00"
+    }
+  ]
+}
