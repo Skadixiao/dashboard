@@ -1,3 +1,3 @@
 company,ticker,event_title,event_type,event_date,raw_date,event_time,timezone,source_url,source_page,scraped_at_utc
-Microsoft Corporation,MSFT,Past Events,Other,,,,,https://www.microsoft.com/en-us/investor/events/events-recent,https://www.microsoft.com/en-us/investor/events/default,2026-07-15T22:03:51.815633+00:00
-Microsoft Corporation,MSFT,Upcoming Events,Other,,,,,https://www.microsoft.com/en-us/investor/events/events-upcoming,https://www.microsoft.com/en-us/investor/events/default,2026-07-15T22:03:51.822354+00:00
+Microsoft Corporation,MSFT,Past Events,Other,,,,,https://www.microsoft.com/en-us/investor/events/events-recent,https://www.microsoft.com/en-us/investor/events/default,2026-07-15T22:32:42.782711+00:00
+Microsoft Corporation,MSFT,Upcoming Events,Other,,,,,https://www.microsoft.com/en-us/investor/events/events-upcoming,https://www.microsoft.com/en-us/investor/events/default,2026-07-15T22:32:42.790191+00:00
