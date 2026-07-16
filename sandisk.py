@@ -13,8 +13,12 @@ def clean_text(text):
 def scrape_sandisk_upcoming_events():
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=False,
-            args=["--disable-http2"],
+            headless=True,
+            args=[
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-http2",
+            ],
         )
 
         page = browser.new_page(
