@@ -27,7 +27,6 @@ def scrape_sandisk_upcoming_events():
 
         page.set_default_timeout(60_000)
 
-        print("Opening Sandisk events page...")
         page.goto(URL, wait_until="commit", timeout=60_000)
 
         heading = page.locator("h2", has_text="Upcoming Events").first
