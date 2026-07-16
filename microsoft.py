@@ -54,10 +54,3 @@ def extract_upcoming_event() -> dict:
         finally:
             browser.close()
 
-
-if __name__ == "__main__":
-    event = extract_upcoming_event()
-
-    print("Section:", event["section"])
-    print("Date and time:", event["datetime"])
-    print("Event title:", event["title"])
