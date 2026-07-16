@@ -5,11 +5,38 @@ import pandas as pd
 import streamlit as st
 from dateutil import parser
 
+import subprocess
+import sys
+from pathlib import Path
+
+from playwright.sync_api import sync_playwright
 from microsoft import extract_upcoming_event
 from micron import extract_micron_upcoming_events
 from sandisk import scrape_sandisk_upcoming_events
 
+def ensure_playwright_chromium():
+    """Install Chromium when it is missing on the Streamlit server."""
+    cache_dir = Path.home() / ".cache" / "ms-playwright"
 
+    chromium_exists = (
+        cache_dir.exists()
+        and any(cache_dir.glob("chromium-*"))
+    )
+
+    if not chromium_exists:
+        subprocess.run(
+            [
+                sys.executable,
+                "-m",
+                "playwright",
+                "install",
+                "chromium",
+            ],
+            check=True,
+        )
+
+
+ensure_playwright_chromium()
 TIMEZONE_ABBREVIATIONS = {
     "PT": -7 * 3600,
     "PDT": -7 * 3600,
